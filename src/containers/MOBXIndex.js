@@ -8,6 +8,10 @@ const todoList = asyncRouter(() => import('./todoList/TodoList'));
 const nameSpace = asyncRouter(() => import('./nameSpace/NameSpace'));
 
 class MOBXIndex extends React.Component {
+	componentWillMount() {
+		console.log('test');
+	}
+
 	render () {
 		return  (
 			<BrowserRouter>
